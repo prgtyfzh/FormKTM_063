@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Text, Image, Date</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+                fieldset{
+                    width: 350px;
+                }
+            </style>
+            
+        
+        <fieldset>
+        <form action="/mainpage" method="POST" enctype="multipart/form-data">
+            <center><h3>
+            KTM
+            </h3></center>
+            <hr/>
+            
+            <p>
+            NAMA : <input type="text" name="nama"/>
+            </p>
+            <p>
+            NIM : <input type="text" name="nim"/>
+            </p>
+            <p>
+            TANGGAL LAHIR : <input type="date" name="ttl"/>
+            </p>
+            <p>
+            FOTO : <input type="file" name="gambar" class="form-control-file"/>
+            </p>
+            <br/>
+            <input type="submit" value="KIRIM" style="float: right;"/>
+        </fieldset>
+    </body>
+</html>
