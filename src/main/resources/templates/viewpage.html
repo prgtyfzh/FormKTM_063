@@ -13,7 +13,8 @@ and open the template in the editor.
     <body>
         <style>
                 fieldset{
-                    width: 350px;
+                    width: 400px;
+                    height: 270px;
                     background-color: #F0E68C;
                     
                 }
@@ -23,18 +24,18 @@ and open the template in the editor.
             <center><h3>KARTU TANDA MAHASISWA</h3></center>
             <hr/>
             
-            <img th:src="${gambar}" style="width: 110px; height: 150px; float: right" />
-
-            <p>
-            <l th:text="${paketnama}"></l>
-            </p>
+            <img th:src="UMY2.png" style="width: 250px; height: 70px; float: left; margin-top: 20px" />
             
-            <p>
-            <l th:text="${paketnim}"></l>
-            </p>
+            <img th:src="${gambar}" style="width: 150px; height: 200px; float: right" />
+            
+            <br/><br/><br/><br/><br/><br/><br/>
 
-            <p>
+            <l th:text="${paketnama}"></l>
+            <br/>
+            <l th:text="${paketnim}"></l>
+            <br/>
             <l th:text="${pakettgl}"></l>
-            </p>
+            <br/>
+            <l th:text="${paketeml}"></l>
     </body>
 </html>
