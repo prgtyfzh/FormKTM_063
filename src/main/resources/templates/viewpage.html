@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>KTM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <style>
+                fieldset{
+                    width: 350px;
+                    background-color: #F0E68C;
+                    
+                }
+        </style>
+        
+        <fieldset>
+            <center><h3>KARTU TANDA MAHASISWA</h3></center>
+            <hr/>
+            
+            <img th:src="${gambar}" style="width: 110px; height: 150px; float: right" />
+
+            <p>
+            <l th:text="${paketnama}"></l>
+            </p>
+            
+            <p>
+            <l th:text="${paketnim}"></l>
+            </p>
+
+            <p>
+            <l th:text="${pakettgl}"></l>
+            </p>
+    </body>
+</html>
