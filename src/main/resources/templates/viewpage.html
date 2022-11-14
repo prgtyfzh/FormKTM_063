@@ -14,9 +14,17 @@ and open the template in the editor.
         <style>
                 fieldset{
                     width: 400px;
-                    height: 270px;
-                    background-color: #F0E68C;
+                    height: 270px;  
+                    background-image: url('UMY.jpeg');
                     
+                }
+                p{
+                    color: white;
+                    margin-top: 138.5px;
+                }
+                
+                h3{
+                    color: white;
                 }
         </style>
         
@@ -24,12 +32,12 @@ and open the template in the editor.
             <center><h3>KARTU TANDA MAHASISWA</h3></center>
             <hr/>
             
-            <img th:src="UMY2.png" style="width: 250px; height: 70px; float: left; margin-top: 20px" />
+            <img th:src="UMY2.png" style="width: 245px; height: 65px; float: left; margin-top: 20px" />
             
             <img th:src="${gambar}" style="width: 150px; height: 200px; float: right" />
             
-            <br/><br/><br/><br/><br/><br/><br/>
-
+            
+            <p>
             <l th:text="${paketnama}"></l>
             <br/>
             <l th:text="${paketnim}"></l>
@@ -37,5 +45,6 @@ and open the template in the editor.
             <l th:text="${pakettgl}"></l>
             <br/>
             <l th:text="${paketeml}"></l>
+            </p> 
     </body>
 </html>

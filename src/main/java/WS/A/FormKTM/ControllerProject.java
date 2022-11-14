@@ -41,14 +41,11 @@ public class ControllerProject {
         String blob = Base64.encodeBase64String(img.getBytes());      
         String isiimg = "data:image/*;base64, "+blob+" ";
         
-        String logo = "Pictures/UMY.png;base64, "+blob+" ";
-        
         kiriman.addAttribute("paketnama", nama);
         kiriman.addAttribute("paketnim", nim);
         kiriman.addAttribute("paketeml", email);
         kiriman.addAttribute("pakettgl", tanggalKu);
         kiriman.addAttribute("gambar", isiimg);
-        kiriman.addAttribute("paketlogo", logo);
         
         return "viewpage";
     }
